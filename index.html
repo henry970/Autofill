@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FillPilot – Smart Form Autofill for QA</title>
+<meta name="description" content="Fill web forms with realistic, edge-case or invalid test data. Multi-step forms, uploads, date pickers and validation reports.">
+<link rel="icon" href="icon128.png">
+<style>
+  :root { --bg:#ffffff; --fg:#1a1d23; --muted:#5b6270; --accent:#2f6fed; --card:#f4f6fa; --line:#e2e6ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12151b; --fg:#e8ebf1; --muted:#9aa3b2; --accent:#6b9bff; --card:#1b1f27; --line:#2a303b; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 80px; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom:8px; }
+  header img { width:56px; height:56px; }
+  h1 { font-size:2rem; margin:0; }
+  h2 { margin-top:56px; padding-top:16px; border-top:1px solid var(--line); }
+  .lead { color:var(--muted); font-size:1.1rem; }
+  ul { padding-left:1.2em; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 20px; }
+  kbd { background:var(--card); border:1px solid var(--line); border-radius:4px; padding:1px 6px; font-size:.9em; }
+  a { color:var(--accent); }
+  nav a { margin-right:16px; }
+  footer { margin-top:64px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon128.png" alt="">
+    <h1>FillPilot</h1>
+  </header>
+  <p class="lead">Smart form autofill for QA testers and developers.</p>
+  <nav><a href="#features">Features</a><a href="#support">Support</a><a href="#privacy">Privacy policy</a></nav>
+
+  <h2 id="features">Features</h2>
+  <ul>
+    <li>Fill web forms with realistic, edge-case or deliberately invalid test data</li>
+    <li>Handles multi-step forms, file uploads and date pickers</li>
+    <li>Validation reports to see how a form reacts to the data</li>
+    <li>Keyboard shortcut: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> fills all fields on the page</li>
+    <li>Right-click menu for quick access</li>
+  </ul>
+
+  <h2 id="support">Support</h2>
+  <div class="card">
+    <p>Found a bug, have a question or want to suggest a feature? Please
+      <a href="https://github.com/henry970/Autofill/issues">open an issue on GitHub</a>.</p>
+    <p>Please include your Chrome version, the FillPilot version and the page where the problem happened.</p>
+  </div>
+  <h3>FAQ</h3>
+  <p><strong>A field wasn't filled.</strong> Some custom widgets load late. Wait for the page to finish loading and run FillPilot again.</p>
+  <p><strong>The shortcut doesn't work.</strong> Check or change it at <code>chrome://extensions/shortcuts</code>.</p>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <p><em>Last updated: November 13, 2026</em></p>
+  <p>FillPilot does not collect, transmit, sell or share any personal data.</p>
+  <ul>
+    <li><strong>No data leaves your device.</strong> FillPilot makes no network requests and has no servers, analytics or tracking.</li>
+    <li><strong>Local storage only.</strong> Your settings and profiles are saved in your browser with Chrome's local extension storage. They stay on your computer, and you can delete them by removing the extension.</li>
+    <li><strong>Page access.</strong> FillPilot needs access to web pages only so it can find and fill form fields when you ask it to. Page content is never recorded or sent anywhere.</li>
+  </ul>
+  <p>Questions about this policy: <a href="https://github.com/henry970/Autofill/issues">open an issue on GitHub</a>.</p>
+
+  <footer>© 2026 FillPilot</footer>
+</main>
+</body>
+</html>
